@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("Halo semua perkenalkan");
+
+		var Abdurrahman = "My name is Abdurrahman";
+		document.write(Abdurrahman);
+	</script>
+	<ul>
+		<li><h3>contoh variabel 2 :</h3></li>
+	</ul>
+	<script type="text/javascript">
+		var nama="Abdurrahman";
+		var umur="19";
+		document.write("nama anda : " + nama + "<br>");
+		document.write("Usia Anda : " + umur);
+	</script>
+	<ul>
+		<li><h3>Contoh variabel 3</h3></li>
+	</ul>
+	<script type="text/javascript">
+		document.write("Asslamualaikum : <br>");
+
+		var ammar = "nama saya adalah ammar";
+
+		document.write(ammar);
+	</script>
+	<ul>
+		<li><h3>Contoh Dari if else 1</h3></li>
+	</ul>
+	<script type="text/javascript">
+		var paswordmasuk = "Abdurrahman";
+		var paswordData = "Abdurrahman";
+
+		if(paswordmasuk == paswordData) {
+			document.write("Selamat Kamu Berhasil masuk");
+		}
+		else {
+			document.write("Maaf Data Yang Anda Masukan Salah");
+		}
+	</script>
+	<ul>
+		<li><h3>Contoh dari if else 2</h3></li>
+	</ul>
+	<script type="text/javascript">
+		var angka1 = 29;
+			angka3 = 30;
+
+		if(angka1 < angka3) {
+			document.write("Kamu sudsah berhasil");
+		}
+		else {
+			document.write("kamu salah memasukan data");
+		}
+	</script>
+	<ul>
+		<li><h3>Contoh dari if else 3 </h3></li>
+	</ul>
+	<script type="text/javascript">
+		var hargaTiket = 2000;
+
+		if (hargaTiket > 1500) {
+			document.write("Selamat anda telah memesan tiket");
+		}
+		else {
+			document.write("Maaf proses Pemesanan Anda Gagal");
+		}
+	</script>
+	<ul>
+		<li><h3>Contoh dari if else if 1</h3></li>
+	</ul>
+	<script type="text/javascript">
+		var nilai = 90;
+		if (nilai<80)
+		{
+			document.write("anda harus mengulang");
+		}
+		else if (nilai<70)
+		{
+			document.writa("Anda mendapatkan nilai D");
+		}
+		else if (nilai>70 && nilai<101)
+		{
+			document.write("nilai anda memuaskan");
+		}
+		else
+		{
+			document.write("anda salah memasukan data");
+		}
+		
+		</script>
+	<ul>
+		<li><h3>Contoh dari if else if 2</h3></li>
+	</ul>
+		<script>
+            function hello()
+            {
+                var nilaiangka=100;
+                var nilaihuruf;
+                if(nilaiangka<70)
+                {
+                    alert("nilai anda B");
+                }
+                else if(nilaiangka>=70&&nilaiangka<100)
+                {
+                    alert("nilai anda A");
+                }
+                else
+                {
+                    alert("anda luar biasa");
+                }
+            }
+        </script>
+        <button onClick="hello()">Click me</button>
+	<ul>
+		<li><h3>Contoh dari if else if 3</h3></li>
+	</ul>
+        <script>
+				var angka=1;
+				  
+				if (angka==1)
+				{
+				   console.log("Angka Satu");
+				}
+				else if (angka==2)
+				{
+				   console.log("Angka Dua");
+				}
+				else if (angka==3)
+				{
+				   console.log("Angka Tiga");
+				}
+				else if (angka==4)
+				{
+				   console.log("Angka Empat");
+				}
+		</script>
+		<button onClick="hai()">silahkan di cek</button>
+	<ul>
+		<li><h3>Contoh Dari Array 1</h3></li>
+	</ul>
+	<script type="text/javascript">
+		var mobil = new Array ("angkot","bis","motor","Sepeda","Mobila-Mobilan","pesawat","kapal laut");
+
+		document.write(mobil[3]);
+	</script>
+	<ul>
+		<li><h3>Contoh Dari Array 2</h3></li>
+	</ul>
+	<script type="text/javascript">
+		var mobil = new Array ("angkot","bis","motor","ferari","Mobila-Mobilan","pesawat","kapal laut");
+
+
+		document.write("saya mempunyai mobil " + mobil[3]);
+	</script>
+	<ul>
+		<li><h3>Cotoh Dari Array 3</h3></li>
+	</ul>
+	<script type="text/javascript">
+		var mobil = new Array ("Brio","Honda Jazz","Alpard","Datsun","Nissan","Russ"); 
+		var motor = new Array ("Mio","Supra","Jupiter x","Vario","Ninja","Blad","vixsion","vespa");
+
+		document.write("Saya baru saja membeli mobil " + mobil[3] + ", Dan saya mebeli sebuah moter " + motor[3]);
+	</script>
+	<ul>
+		<li><h3>Contoh dari swicth 1</h3></li>
+	</ul>
+<script>
+			function jumlah() {    
+			var al = document.getElementById("case").value;  
+			var m=al-0;
+			switch (m)
+			{
+			case 1: 
+			document.getElementById("result10").innerHTML = " Kamu Penyabar" ;
+			break;
+			case 2: 
+			document.getElementById("result10").innerHTML = " Kamu Orang Setia"  ;
+			break;
+			case 3: 
+			document.getElementById("result10").innerHTML = " Kamu orang yang Sangat Cerdas"  ;
+			break;
+			case 4: 
+			document.getElementById("result10").innerHTML = " Kamu Orang yang Kuat Loh"  ;
+			break;
+			default: 
+			document.getElementById("result10").innerHTML = " Ketikkan Sesuai aturan yang dijelaskan" ;
+			break; } /* <<< Akhir perintah Switch diakhiri dengan kurung*/
+			}
+</script> 
+				 	<h5>Caritahu sifat mu </h5>
+					silahkan masukan data :			
+			<input id="case" size="5" type="text" /><br/>
+			<input onclick="jumlah()" type="button" value="Periksa" />
+			<span id="result10"></span>  
+			</div>
+<ul>
+	<li><h3>Contoh dari swicth 2</h3></li>
+</ul>
+<script>
+			function hasilku() {    
+			var al = document.getElementById("ala").value;  
+			var x=al-0;
+			switch (x)
+			{
+			case 1: 
+			document.getElementById("case2").innerHTML = " kamu memiliki mobil 4 " ;
+			break;
+			case 2: 
+			document.getElementById("case2").innerHTML = " kamu memiliki mobil 6"  ;
+			break;
+			case 3: 
+			document.getElementById("case2").innerHTML = " kamu memiliki mobil 10 "  ;
+			break;
+			case 4: 
+			document.getElementById("case2").innerHTML = " kamu memiliki mobil 3 "  ;
+			break;
+			default: 
+			document.getElementById("case2").innerHTML = " tolong masukan data yang sesuai " ;
+			break; }
+			}
+</script> 
+				 	<h5>Seberapa Banyak kamu memiliki mobil : </h5>
+					silahkan masukan angka :			
+			<input id="ala" size="5" type="text" /><br/>
+			<input onclick="hasilku()" type="button" value="Periksa" />
+			<span id="case2"></span>  
+			</div>
+<ul>
+	<li><h3>Contoh swicth 3</h3></li>
+</ul>
+<script type="text/javascript">
+			var d = new Date();
+			hari=d.getDay();
+			switch (hari)
+			{
+			case 1:
+			document.write("sekarang hari senin");
+			break;
+			case 2:
+			document.write("sekarang hari selasa");
+			break;
+			case 3:
+			document.write("hari ini hari rabu");
+			break;
+			case 4:
+			document.write("sekarang hari kamis");
+			break;
+			case 5:
+			document.write("sekarang hari jum'at");
+			break;
+			case 6:
+			document.write("hari ini hari sabtu");
+			break;
+			case 0:
+			document.write("hari ini hari minggu ");
+			break;
+			default:
+			document.write("saya ngga tau hari ini hari apa")
+		}
+</script>
+<ul>
+	<li><h3>Contoh dari Array for</h3></li>
+</ul>
+<script type="text/javascript">
+				var i;
+				for (i=10;i>0;i++)
+				{
+   				document.write("Anak santri informatika" + "<br>")
+   				document.write(i);
+				}
+</script>
+<ul>
+	<li><h3>Contoh dari Array for</h3></li>
+</ul>
+<script>
+				var i;
+				for (i=1;i<=10;i=i+1)
+   				document.write("ini adalah tugas javascript Array" + "<br>");
+</script>
+</body>
+</html>

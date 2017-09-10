@@ -1,0 +1,180 @@
+html, body, div, span, applet, object, iframe,
+ h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+ u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+body {
+	padding: 20px;
+}
+img {
+	padding: 1px;
+	height: 70px;
+	width: 90px;
+}
+#logo {
+	float: right;
+	height: 80px;
+	width: 200px;
+	padding: 10px;
+}	
+#layout {
+	background: #fff;
+	width: 900px;
+	margin: auto;
+	text-align: left;
+	padding: 2px;
+	border: 1px solid;
+}
+#header {
+	width: 100%;
+	height: 80px;
+	background: #353535;
+	position: relative;
+	border: 1px solid;
+}
+#menu {
+	width: 100%;
+	height: 40px;
+	background: #666;
+	position: relative;
+	border: 1px solid;
+}
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#menu ul li {
+	float: left;
+}
+#menu ul li {
+	float: left;
+	color: #666666;
+	padding: 12px 20px;
+	background: #666666;
+	border-left: 1px solid #3c4042;
+	border-right: 1px solid #3c4042;
+	text-shadow: 0 -1px 1px rgba(0, 0, 0.6);
+}
+#menu a {
+	color: white;
+	text-decoration: none;
+}
+#menu li:hover {
+	background: #444444;
+}
+#menu ul li ul {
+	background: #888888;
+	position: relative;
+	top: 28px;
+	left: -10px;
+	display: none;
+}
+#sidebar {
+	margin: 0PX;
+	width: 30%;
+	background-color: #F2F1F1;
+	position: relative;
+	float: right;
+	border-style: dotted;
+	border-width: 1px solid;
+	height: 800px;
+}
+#sidebar ul li  {
+	margin: 20px;
+	font-family: calibri;
+}
+#sidebar a {
+	text-decoration: none;
+	color: #FBAA1E;
+	font-family: calibri;
+}
+#content {
+	margin: 0px;
+	background: #FDFCFC;
+	width: 70%;
+	position: relative;
+	float: left;
+	border-style: dotted;
+	border-width: 1px solid;
+	height: 800px;
+}
+#content img {
+	height: 130px;
+	width: 130px;
+	margin: 10px;
+	float: left;
+}
+#content ul {
+	margin: 20px;
+}
+#content a {
+	text-decoration: none;
+	color: red;
+	text-family: calibri;
+}
+#text {
+	padding: 20px
+}
+#footer {
+	background: #5E5E5E;
+	text-align: center;
+	padding: 20px 0;
+	border: 1px solid;
+}
+#icon {
+	text-align: 10px;
+
+}
+

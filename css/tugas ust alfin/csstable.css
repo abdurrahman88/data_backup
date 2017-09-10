@@ -1,0 +1,30 @@
+table,td,tr,th {
+    font-family: arial, sans-serif;
+    border-width: 40px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    text-align: 1px solid black;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #97DEB9;
+}
+.jam {
+    background: #39e55b;
+}
+.hari {
+    background: #39e55b;
+}
+.s1 {
+    background: #BFC9C4;
+}
+.s2{
+    background: #97DEB9;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar Javascript Part 7 : Mengenal Event Pada Javascript</title>
+	
+</head>
+<body>
+<ul>
+	<li><h3>contoh dari onblur 1</h3></li>
+</ul>
+	<script type="text/javascript">
+		
+		function tampilkanPesan() {
+			alert("selamat anda telah berhasil")
+		}
+	</script>
+	Tulis sesuatu :
+	<input type="text" name="debit" onblur="tampilkanPesan()">
+<ul>
+	<li><h3>contoh dari onblur 2</h3></li>
+</ul>
+	<script type="text/javascript">
+		
+		function tampilkanPesan() {
+			alert("selamat anda telah berhasil")
+		}
+	</script>
+	Tulis sesuatu :
+	<input type="text" name="debit" onblur="tampilkanPesan()">
+<ul>
+	<li><h3>contoh dari onblur 3</h3></li>
+</ul>
+	<FORM>
+		Tulis nama anda :
+		<input type="text" ID="inputTextID">
+	</FORM>
+	<script type="text/javascript">
+		function HandleEvent() {
+			this.style.background="red";
+		}
+		var inputElem=document.getElementById("inputTextID");
+		inputElem.onblur=HandleEvent;
+
+	</script>
+<ul>
+	<li><h3>Contoh ondoubelclik 1</h3></li>
+</ul>
+	
+		<button type="button"
+		ondblclick="document.getElementById('contoh').innerHTML = Date ()">
+		coba anda clik di sini .</button>
+
+		<p id="contoh"></p>
+<ul>
+	<li><h3>Contoh dari ondoubelclik 2</h3></li>
+</ul>
+	<script type="text/javascript">
+    		function klik(){
+        		alert("Ini adalah contoh event klik");
+    		}
+	</script>
+    		<form>
+       	 		<input type="button" name="test" value="Silahkan Klik" ondblclick="klik()" />
+    		</form> 
+<ul>
+	<li><h3>Contoh dari ondoubelclik 3</h3></li>
+</ul>
+			
+			<button ondblclick="tampilkan_nama()">Coba clik pada Tombol ini</button>
+ 
+			
+			<div id="hasil"></div>
+		 
+	<script>		
+			function tampilkan_nama(){
+				document.getElementById("hasil").innerHTML = "<h3>Selamat kamu berhasil</h3>";
+			}
+	</script>
+<ul>
+	<li><h3>Contoh dari onmouseover 1</h3></li>
+</ul>
+ 		<table>
+		     <tr onmouseover="this.bgColor='red'" onmouseout="this.bgColor='#fff'" bgcolor="#fff">
+		         <td>Letakan Mouse Di sini untuk menjalankan event OnMouseOver</td>
+		     </tr>
+		     <tr onmouseover="this.bgColor='blue'" onmouseout="this.bgColor='#fff'" bgcolor="#fff">
+		         <td>Letakan Mouse Di sini juga untuk menjalankan event OnMouseOver</td>
+		     </tr>
+		</table>
+<ul>
+	<li><h3>Contoh dari onmouseover 2</h3></li>
+</ul>
+	<div id="latihan" onmouseover="mouseOver()" onmouseout="mouseOut()">Mari kita coba</div>
+ 
+	<script>
+			function mouseOver() {
+				document.getElementById("latihan").style.color = "red";
+			}
+				 
+			function mouseOut() {
+				document.getElementById("latihan").style.color = "black";
+			}
+	</script>
+
+<ul>
+	<li><h3>Contoh dari onchange 1</h3></li>
+</ul>
+		<form method="POST" action="#" id="frm1">
+		Kota :  <select name="idkota" id="idkota"><br />
+		        <option value="1">Jakarta</option><br />
+		        <option value="2">Bogor</option><br />
+		        <option value="3">Bandung</option><br />
+		        <option value="4">Surabaya</option><br />
+		        <option value="5">Kebumen</option><br />
+		      </select><br />
+		<br>Kota Pilihan : <input type="text" name="kota" value="" size="20"/><br />
+		</form>
+		<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script><br>
+ 		<script type="text/javascript">
+ 
+				$(document).ready(function() {
+ 
+ 			 	$("#idkota").change(function() {
+ 
+    			var pilihan = $(this).find("option:selected").text();
+    			$("#frm1 :input[name='kota']").val(pilihan);
+ 
+			});
+ 
+ 			});
+ 		</script>
+
+<ul>
+	<li><h3>Contoh dari onchange 2</h3></li>
+</ul>
+	<form>
+	     Silahkan pilih tujuan anda:
+	     <select id="tujuan" name="tujuan" onchange="proses()" >
+	       <option value="" selected>Pilih Tujuan Anda</option>
+	       <option value="Rp. 10.000,-">Banyuwangi</option>
+	       <option value="Rp. 150.000,-">Jakarta</option>
+	       <option value="Rp. 75.000,-">Surabaya</option>
+	     </select>
+	 
+	     Harga Tiket : <input type="text" name="harga" id="harga" />
+	</form>
+
+	<script type="text/javascript">
+		function proses(){
+	  		var harga=document.getElementById("tujuan").value;
+	  		document.getElementById("harga").value=harga;
+	  	}
+	</script>
+
+<ul>
+	<li><h3>Contoh dari onchange 3</h3></li>
+</ul>
+	<form>
+	     Silahkan pilih pesawat anda:
+	    <select id="pesawat" name="pesawat" onchange="plane()" >
+	       <option value="" selected>pilih pesawat anda</option>
+	       <option value="Rp. 1.050.000,-">gauda air</option>
+	       <option value="Rp. 550.000,-">Lion Air</option>
+	       <option value="Rp. 750.000,-">Sriwijaya Air</option>
+	    </select>
+	 
+	     Harga Tiket : <input type="text" name="price" id="price" />
+	</form>
+
+	<script type="text/javascript">
+		function plane(){
+	  		var price=document.getElementById("pesawat").value;
+	  		document.getElementById("price").value=price;
+	  	}
+	</script>
+</body>
+</html>

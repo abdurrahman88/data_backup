@@ -1,0 +1,18 @@
+body {
+	background: yellow
+	;
+}
+td {
+  background: grey;
+}
+td {
+  background: blue;
+}
+a {
+	color: red;
+	text-decoration: none; 
+}
+a:hover {
+	color: purple;
+	text-decoration: underline; 
+}
